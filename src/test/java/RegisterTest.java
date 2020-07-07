@@ -24,8 +24,8 @@ public class RegisterTest {
 
         driver= new ChromeDriver();
 
-          driver.findElement(By.cssSelector("#header > div > div.skip-links > div > a")).click();
-          driver.findElement(By.cssSelector("#header-account > div > ul > li:nth-child(5) > a")).click();
+          driver.findElement(By.cssSelector(".skip-account")).click();
+          driver.findElement(By.cssSelector(".links [title=\"Register\"]a")).click();
           driver.findElement(By.cssSelector("#firstname")).sendKeys("Szekely");
          driver.findElement(By.cssSelector("#lastname")).sendKeys("Szilard");
         driver.findElement(By.cssSelector("#email_address")).sendKeys("szilard.tivadar@yahoo.com");

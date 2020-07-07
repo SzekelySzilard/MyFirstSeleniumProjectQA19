@@ -24,7 +24,7 @@ public class ConnectWithUs {
     @Test
     public void ConnectFacebook(){
 
-        driver.findElement(By.cssSelector("body > div > div.page > div.footer-container > div > div.links.social-media > ul > li:nth-child(1) > a")).click();
+        driver.findElement(By.cssSelector(".facebook")).click();
 
         Assert.assertEquals("https://www.facebook.com/",driver.getTitle());
 
@@ -32,7 +32,7 @@ public class ConnectWithUs {
     }
     @Test
     public void  connectTwitter(){
-        driver.findElement(By.cssSelector("body > div > div.page > div.footer-container > div > div.links.social-media > ul > li:nth-child(2) > a")).click();
+        driver.findElement(By.cssSelector(".Twitter")).click();
 
         Assert.assertEquals("https://www.tweeter.com/",driver.getTitle());
 

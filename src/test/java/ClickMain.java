@@ -25,7 +25,7 @@ public class ClickMain {
     @Test
     public void shirtsMen(){
 
-        driver.findElement(By.xpath("//*[@id=\"nav\"]/ol/li[2]/ul/li[3]/a")).click();
+        driver.findElement(By.cssSelector("nav-1-2 ")).click();
         //nu reusesc nici cum sa selectez din meniul acela.....
     }
 

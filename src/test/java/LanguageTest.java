@@ -19,7 +19,7 @@ public class LanguageTest {
 
          Select mydrpdwn= new Select(driver.findElement(By.id("select-language")));
         mydrpdwn.selectByVisibleText("German");
-         WebElement german=driver.findElement(By.cssSelector("#header > div > div.skip-links > div > a > span.label"));
+         WebElement german=driver.findElement(By.cssSelector(".skip-account"));
 
          Assert.assertNotEquals("ACCOUNT", german.getText());
 
